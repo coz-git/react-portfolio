@@ -84,7 +84,7 @@ const Work = styled(NavLink)`
 const BottomBar = styled.div`
   @media only screen and (max-width: 768px) {
     position: absolute;
-    bottom: 3rem;
+    bottom: 5rem;
     left: 0;
     right: 0;
   }
@@ -185,8 +185,9 @@ const Main = () => {
         </Center>
 
         <Contact target="_blank" to='javascript:void(0)'
-      onClick={() => window.location = 'mailto:sultankosasih@gmail.com'}>
-        {/* <Contact target="_blank"  to={{pathname:"mailto:sultankosasih@gmail.com"}}> */}
+          onClick={() => window.location = 'mailto:sultankosasih@gmail.com'}
+          click={click}
+        >
           <motion.h2
             whileHover={{scale : 1.1}}
             whileTap={{scale : 0.9}}

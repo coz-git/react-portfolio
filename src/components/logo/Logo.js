@@ -5,7 +5,7 @@ const LogoContainer = styled.h1`
 
     display: inline-block;
     color : ${props => props.color == 'light' ? props.theme.body : props.theme.text };
-    font-family: 'Pasifico', cursive;
+    font-family: 'Teko', sans-serif;
     position: fixed;
     left: 2rem;
     top: 2rem;

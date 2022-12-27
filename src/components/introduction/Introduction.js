@@ -8,33 +8,8 @@ import Me from '../../assets/Images/profile pic.png'
 
 const Box = styled(motion.div)`
     @media only screen and (min-width: 768px) {
-        /* position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-
         height: 55vh;
-        width: 60vw;
-        display: flex; */
-        height: 55vh;
-
         border : 2px solid #afe2e6;
-        
-        /* background: 
-            linear-gradient(
-                to right,
-                ${props => props.theme.body} 50%,
-                ${props => props.theme.text} 50%) 
-            bottom,
-            linear-gradient(
-                to right,
-                ${props => props.theme.body} 50%,
-                ${props => props.theme.text} 50%) 
-            top;
-        background-repeat: no-repeat;
-        background-size: 100% 2px;
-        border-left: 2px solid ${props => props.theme.body};
-        border-right: 2px solid ${props => props.theme.text}; */
         z-index: 1;
     }
     @media only screen and (max-width: 768px) {
@@ -43,18 +18,6 @@ const Box = styled(motion.div)`
         border-left-width: initial;
         border-right-color: initial;
         border-left-color: initial;
-        /* background: 
-            linear-gradient(
-                rgb(252, 246, 244) 50%, 
-                rgb(0, 0, 0) 50%
-            ) 0px 0px / 2px 100% no-repeat, 
-            linear-gradient(
-                rgb(252, 246, 244) 50%, 
-                rgb(0, 0, 0) 50%) 
-            100% 0px; */
-
-        
-        /* border-style: solid none; */
         
         background-size: 100% 2px;
         
@@ -133,7 +96,7 @@ const Introduction = (props) => {
   return (
     <Box
         initial={{height: 0}}
-        animate={props.matches ? { height : '55vh'} : { height : '70vh'} }
+        animate={props.matches ? { height : '55vh'} : { height : '65vh'} }
         transition={{ type: 'spring', duration : 2, delay : 1 }}
     >
         <SubBox>

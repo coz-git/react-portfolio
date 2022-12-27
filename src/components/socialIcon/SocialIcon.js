@@ -33,14 +33,14 @@ const SocialIcon = (props) => {
     return (
         <Icons>
             <div>
-                <NavLink style={{ color : 'inherit'}} target="_blank" to={{pathname : 'https://google.com'}}>
+                <a href="https://github.com/coz-git" target="_blank">
                     <GithubIcon width={25} height={25} fill={props.color == 'light' ? darkTheme.text : darkTheme.body} />
-                </NavLink>
+                </a>
             </div>
             <div>
-                <NavLink style={{ color : 'inherit'}} target="_blank" to={{pathname : 'https://google.com'}}>
+                <a href="https://www.linkedin.com/in/rama-kosasih-912bbb12a/" target="_blank">
                     <LinkedinIcon width={30} height={30} fill={props.color == 'light' ? darkTheme.text : darkTheme.body} />
-                </NavLink>
+                </a>
             </div>
             <Line color={props.color} />
         </Icons>

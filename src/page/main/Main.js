@@ -82,6 +82,12 @@ const Work = styled(NavLink)`
 `
 
 const BottomBar = styled.div`
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+  }
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -100,12 +106,6 @@ const About = styled(NavLink)`
   text-decoration: none;
   z-index: 1;
 `
-
-// const Skill = styled(NavLink)`
-//   color: ${props => props.theme.text};
-//   text-decoration: none;
-//   z-index: 1;
-// `
 
 const Center = styled.button`
   position: absolute;
@@ -184,7 +184,9 @@ const Main = () => {
           }
         </Center>
 
-        <Contact target="_blank" to={{pathname : 'https://google.com'}} click={click}>
+        <Contact target="_blank" to='javascript:void(0)'
+      onClick={() => window.location = 'mailto:sultankosasih@gmail.com'}>
+        {/* <Contact target="_blank"  to={{pathname:"mailto:sultankosasih@gmail.com"}}> */}
           <motion.h2
             whileHover={{scale : 1.1}}
             whileTap={{scale : 0.9}}
